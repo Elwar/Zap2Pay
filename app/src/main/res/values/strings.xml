@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Zap 2 Pay</string>
+    <string name="your_balance">Your balance: %1$s satoshis</string>
+    <string name="please_swipe_right">Please swipe right to add to your balance</string>
+    <string name="zap2pay_send_button_description">Send payment button</string>
+    <string name="bitcoin_balance">0 Satoshis</string>
+    <string name="swipe_right_to_add_balance">Please swipe right to add to your balance</string>
+    <string name="current_balance_label">Balance: 0 satoshis</string>
+    <string name="configuration_title">Configuration</string>
+    <string name="purchase_price_input">Input price</string>
+    <string-array name="language_array">
+        <item>EN</item>
+        <item>ES</item>
+        <item>FR</item>
+        <item>DE</item>
+        <item>IT</item>
+        <item>RU</item>
+        <item>ZH</item>
+    </string-array>
+
+</resources>

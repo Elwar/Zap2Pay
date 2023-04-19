@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="425dp"
+        android:layout_height="439dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/zap2pay_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 satoshis"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/swipe_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please swipe left to add to your balance"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/balance"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/purchase_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter purchase price"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/purchase_price_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/purchase_price_input"
+        android:layout_width="228dp"
+        android:layout_height="52dp"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:autofillHints="0.00"
+        android:hint="@string/purchase_price_input"
+        android:background="@color/white"
+        android:textColor="#ff9c2a"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/purchase_price_label"
+        tools:visibility="visible" />
+
+
+    <ImageButton
+        android:id="@+id/zap2pay_send_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/zap2pay_send_button_description"
+        android:scaleType="centerInside"
+        android:src="@drawable/zap2pay_send_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/swipe_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
