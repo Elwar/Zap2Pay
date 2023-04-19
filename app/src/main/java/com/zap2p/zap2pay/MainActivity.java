@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText purchasePriceInput;
     private GestureDetectorCompat gestureDetector;
 
-    private int balance = 1; // Example balance value
+    private int balance = 0; // Example balance value
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
